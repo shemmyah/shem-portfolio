@@ -1,0 +1,130 @@
+/* Base transitions */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+:root[data-bs-theme='light'] {
+    --bg-custom: #ffffff;
+    --text-custom: #212529;
+    --card-bg: #f8f9fa;
+    --card-border: #dee2e6;
+}
+
+/* Dark Theme */
+:root[data-bs-theme='dark'] {
+    --bg-custom: #121212;
+    --text-custom: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --card-border: #333;
+}
+
+/* Apply to body and card */
+body {
+    background-color: var(--bg-custom);
+    color: var(--text-custom);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-custom);
+}
+
+#hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Base gradient button */
+.btn-gradient {
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode gradient */
+[data-bs-theme='light'] .btn-gradient {
+    background: linear-gradient(135deg, #393E46, #222831);
+    color: #fff;
+}
+
+[data-bs-theme='light'] .btn-gradient:hover {
+    background: linear-gradient(135deg, #222831, #000000);
+    transform: translateY(-2px);
+}
+
+/* Dark mode gradient */
+[data-bs-theme='dark'] .btn-gradient {
+    background: linear-gradient(135deg, #f4f1f0, #FFEAD8);
+    color: #1c1c1c;
+}
+
+[data-bs-theme='dark'] .btn-gradient:hover {
+    background: linear-gradient(135deg, #f3f1ec, #b6aea3);
+    transform: translateY(-2px);
+}
+
+/* Toggle Mode Button */
+.btn-toggle-mode {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: var(--text-custom);
+    border-radius: 50px;
+    padding: 0.3rem 0.75rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Light mode */
+[data-bs-theme="light"] .btn-toggle-mode {
+
+    border-color: #393E46;
+    background-color: #ffffff;
+}
+
+[data-bs-theme="light"] .btn-toggle-mode:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .btn-toggle-mode {
+    color: #E5E0D8;
+    border-color: #E5E0D8;
+    background-color: #31363F;
+}
+
+[data-bs-theme="dark"] .btn-toggle-mode:hover {
+    background-color: #393e46;
+    color: #fff;
+}
+
+.hello-wrapper {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    text-align: left;
+    vertical-align: middle; 
+    line-height: 1;
+    padding-left: 10px;
+    height: 1.3em;
+}
+
+.hello-font {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: inherit;
+    line-height: 1;
+    vertical-align: baseline;
+    transition: font-family 0.4s ease-in-out;
+}
+
+
+
+
