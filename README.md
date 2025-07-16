@@ -1,4 +1,4 @@
-<h1 align="center">✨ Shem Portfolio</h1>
+<h1 align="center">✨ Personal Portfolio</h1>
 
 <p align="center">
 A personal developer portfolio built with Laravel and a touch of love 💖.
@@ -7,14 +7,13 @@ A personal developer portfolio built with Laravel and a touch of love 💖.
 <p align="center">
 <img src="https://img.shields.io/badge/Laravel-10.x-red?logo=laravel" alt="Laravel Version">
 <img src="https://img.shields.io/badge/Made%20with-PHP-blue?logo=php">
-<img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
 </p>
 
 ---
 
 ## 🧑‍💻 About
 
-**Shem Portfolio** is a minimalist, fully responsive developer portfolio built using Laravel. It showcases personal projects, skills, and a way for clients, collaborators, or employers to reach out.
+**Shem Portfolio** is a minimalist, fully responsive developer portfolio built using Laravel. It showcases personal projects and skills.
 
 This site reflects not just technical ability, but also a love for simple, intentional design.
 
