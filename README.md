@@ -33,7 +33,7 @@ This site reflects not just technical ability, but also a love for simple, inten
 
 - **Laravel 10.x** – Elegant and powerful PHP framework  
 - **Blade Templates** – Clean and reusable component-based templating  
-- **Tailwind CSS** *(or Bootstrap)* – For styling and layout  
+- **Tailwind CSS** – For styling and layout  
 - **PHP 8.x** – Fast and modern backend language  
 - **Gmail SMTP** – For sending real emails via contact form  
 - **MySQL / SQLite** – For storing any dynamic data  
