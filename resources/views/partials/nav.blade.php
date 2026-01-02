@@ -354,7 +354,7 @@
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainNavbar">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainNavbar" style="z-index: 9999; position: relative;">
     <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#hero">
