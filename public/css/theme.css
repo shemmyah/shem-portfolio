@@ -1,34 +1,55 @@
-/* Base transitions */
-body {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Light Theme */
-:root[data-bs-theme='light'] {
-    --bg-custom: #ffffff;
-    --text-custom: #212529;
-    --card-bg: #f8f9fa;
-    --card-border: #dee2e6;
-}
-
-/* Dark Theme */
-:root[data-bs-theme='dark'] {
-    --bg-custom: #121212;
-    --text-custom: #e0e0e0;
-    --card-bg: #1e1e1e;
-    --card-border: #333;
-}
-
-/* Apply to body and card */
 body {
     background-color: var(--bg-custom);
     color: var(--text-custom);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* h1, h2, h3,
+h4, h5, h6 {
+    color: #27374D;
+} */
+
+:root[data-bs-theme="light"] {
+    --bg-custom: #fff;
+    --text-custom: #2e2b3d;
+    --card-bg: #dde6ed;
+    --card-border: #536573;
+    --heading: #27374d;
+
+    --navbar-bg: #e9f0f5;
+    --navbar-text: #27374d;
+}
+
+:root[data-bs-theme="dark"] {
+    --bg-custom: #2e2b3d;
+    --text-custom: #fff;
+    --card-bg: #40394a;
+    --card-border: #5a4e60;
+    --heading: #dde6ed;
+
+    --navbar-bg: #40394a;
+    --navbar-text: #dde6ed;
 }
 
 .card {
     background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
+    border-color: var(--card-border);
     color: var(--text-custom);
+}
+
+.custom-navbar {
+    background-color: var(--navbar-bg) !important;
+    color: var(--navbar-text) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+    transition: color 0.3s ease;
 }
 
 #hero {
@@ -37,7 +58,30 @@ body {
     align-items: center;
 }
 
-/* Base gradient button */
+.aboutsection {
+    border: none;
+    height: 6px;
+    width: 100%;
+    margin: 2rem auto;
+    background: repeating-linear-gradient(
+        to right,
+        #27374D 0,
+        #27374D 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    animation: moveDots 4s linear infinite;
+}
+
+@keyframes moveDots {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 20px 0;
+  }
+}
+
 .btn-gradient {
     color: white;
     border: none;
@@ -48,29 +92,26 @@ body {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-/* Light mode gradient */
-[data-bs-theme='light'] .btn-gradient {
-    background: linear-gradient(135deg, #393E46, #222831);
+[data-bs-theme="light"] .btn-gradient {
+    background: linear-gradient(135deg, #393e46, #222831);
     color: #fff;
 }
 
-[data-bs-theme='light'] .btn-gradient:hover {
+[data-bs-theme="light"] .btn-gradient:hover {
     background: linear-gradient(135deg, #222831, #000000);
     transform: translateY(-2px);
 }
 
-/* Dark mode gradient */
-[data-bs-theme='dark'] .btn-gradient {
-    background: linear-gradient(135deg, #f4f1f0, #FFEAD8);
+[data-bs-theme="dark"] .btn-gradient {
+    background: linear-gradient(135deg, #f4f1f0, #ffead8);
     color: #1c1c1c;
 }
 
-[data-bs-theme='dark'] .btn-gradient:hover {
+[data-bs-theme="dark"] .btn-gradient:hover {
     background: linear-gradient(135deg, #f3f1ec, #b6aea3);
     transform: translateY(-2px);
 }
 
-/* Toggle Mode Button */
 .btn-toggle-mode {
     background-color: transparent;
     border: 2px solid currentColor;
@@ -81,10 +122,8 @@ body {
     font-size: 1rem;
 }
 
-/* Light mode */
 [data-bs-theme="light"] .btn-toggle-mode {
-
-    border-color: #393E46;
+    border-color: #393e46;
     background-color: #ffffff;
 }
 
@@ -93,11 +132,10 @@ body {
     color: #000;
 }
 
-/* Dark mode */
 [data-bs-theme="dark"] .btn-toggle-mode {
-    color: #E5E0D8;
-    border-color: #E5E0D8;
-    background-color: #31363F;
+    color: #e5e0d8;
+    border-color: #e5e0d8;
+    background-color: #31363f;
 }
 
 [data-bs-theme="dark"] .btn-toggle-mode:hover {
@@ -110,7 +148,7 @@ body {
     width: 150px;
     overflow: hidden;
     text-align: left;
-    vertical-align: middle; 
+    vertical-align: middle;
     line-height: 1;
     padding-left: 10px;
     height: 1.3em;
@@ -125,6 +163,32 @@ body {
     transition: font-family 0.4s ease-in-out;
 }
 
+/* Hover zoom animation on image */
+.image-wrapper .profile-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+.image-wrapper .profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
 
-
-
+/* Optional underline hover on heading */
+.about-heading {
+    display: inline-block;
+    position: relative;
+}
+.about-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #08406e, #2575fc);
+    transition: width 0.4s ease-in-out;
+    border-radius: 10px;
+}
+.about-heading:hover::after {
+    width: 100%;
+}
