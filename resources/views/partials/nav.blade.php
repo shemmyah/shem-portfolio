@@ -352,9 +352,20 @@
             transform: translateY(0);
         }
     }
+
+@media (min-width: 992px) {
+    #navbarContent.collapse:not(.show) {
+        display: flex !important;
+        flex-basis: auto;
+    }
+    
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+}
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainNavbar" style="z-index: 9999; position: relative;">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainNavbar">
     <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#hero">
@@ -365,7 +376,6 @@
                  alt="Shem Logo">
         </a>
 
-        <!-- Mobile Toggle Button -->
         <button class="navbar-toggler" 
                 type="button" 
                 data-bs-toggle="collapse" 
