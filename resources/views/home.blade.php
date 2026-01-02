@@ -4,7 +4,7 @@
 
 @section('content')
     <style>
-        /* Modern Color Palette */
+
         :root {
             --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -20,7 +20,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Animated mesh background */
         .animated-bg {
             position: absolute;
             top: 0;
@@ -48,7 +47,6 @@
             66% { transform: translate(5%, -5%) rotate(240deg); }
         }
 
-        /* Floating particles */
         .particles-container {
             position: absolute;
             top: 0;
@@ -92,7 +90,6 @@
             }
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -109,7 +106,6 @@
             background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
         }
 
-        /* Glowing orbs */
         .glow-orb {
             position: absolute;
             border-radius: 50%;
@@ -187,7 +183,6 @@
             50% { width: 100%; left: 0; }
         }
 
-        /* Wave emoji with glow */
         .wave {
             display: inline-block;
             animation: wave-hand 2.5s ease-in-out infinite;
@@ -206,7 +201,6 @@
             60% { transform: rotate(0deg); }
         }
 
-        /* Sparkle animation */
         .bling {
             display: inline-block;
             animation: sparkle-spin 2s ease-in-out infinite;
@@ -261,7 +255,6 @@
             text-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
         }
 
-        /* Premium CTA Button */
         .btn-gradient {
             display: inline-block;
             padding: 1.3rem 3.5rem;
