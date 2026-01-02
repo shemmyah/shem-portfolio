@@ -43,12 +43,12 @@
             position: relative;
         }
 
-        /* Smooth scrolling */
+
         html {
             scroll-behavior: smooth;
         }
 
-        /* Premium Custom Scrollbar */
+
         ::-webkit-scrollbar {
             width: 12px;
         }
@@ -78,8 +78,7 @@
             transform: scale(1.1);
         }
 
-        /* Enhanced Glassmorphic Navbar */
-        #mainNavbar {
+        /* #mainNavbar {
             height: var(--header-height);
             backdrop-filter: blur(20px) saturate(180%);
             -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -116,7 +115,6 @@
             background: rgba(26, 26, 26, 0.95) !important;
         }
 
-        /* Navbar Brand Enhancement */
         .navbar-brand {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 800;
@@ -131,10 +129,9 @@
         .navbar-brand:hover {
             transform: scale(1.05);
             filter: brightness(1.2);
-        }
+        } */
 
-        /* Nav Links Enhancement */
-        .navbar-nav .nav-link {
+        /* .navbar-nav .nav-link {
             font-weight: 600;
             font-size: 1rem;
             padding: 0.8rem 1.5rem !important;
@@ -183,9 +180,8 @@
         [data-bs-theme="dark"] .navbar-nav .nav-link:hover,
         [data-bs-theme="dark"] .navbar-nav .nav-link.active {
             color: #f093fb;
-        }
+        } */
 
-        /* Premium Theme Toggle Button */
         #themeToggle {
             width: 50px;
             height: 50px;

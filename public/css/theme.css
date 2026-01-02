@@ -36,7 +36,6 @@
     background: rgba(26, 26, 26, 0.95) !important;
 }
 
-/* Logo Styling */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -59,7 +58,6 @@
     filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.4));
 }
 
-/* Navigation Links */
 .navbar-nav {
     align-items: center;
     gap: 0.5rem;
@@ -86,7 +84,6 @@
     color: #e0e0e0;
 }
 
-/* Animated underline */
 .navbar-nav .nav-link::before {
     content: "";
     position: absolute;
@@ -105,7 +102,6 @@
     width: 60%;
 }
 
-/* Hover background effect */
 .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
@@ -142,7 +138,6 @@
     color: #f093fb;
 }
 
-/* Theme Toggle Button */
 .btn-toggle-mode {
     width: 50px;
     height: 50px;
@@ -199,7 +194,6 @@
     transform: scale(0.95) rotate(0deg);
 }
 
-/* Navbar Toggler for Mobile */
 .navbar-toggler {
     border: 2px solid;
     border-radius: 12px;
@@ -225,7 +219,6 @@
     transform: scale(1.05);
 }
 
-/* Animated hamburger icon */
 .navbar-toggler-icon {
     background-image: none;
     width: 24px;
@@ -283,7 +276,6 @@
     margin-bottom: -1.5px;
 }
 
-/* Mobile Menu */
 @media (max-width: 991px) {
     .navbar-collapse {
         margin-top: 1rem;
@@ -342,7 +334,6 @@
     }
 }
 
-/* Fade in animation for mobile menu */
 .navbar-collapse.collapsing,
 .navbar-collapse.show {
     animation: fadeInDown 0.3s ease-out;
