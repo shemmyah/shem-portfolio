@@ -19,16 +19,16 @@
     <title>@yield('title', 'My Portfolio')</title>
 
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     @livewireStyles
 </head>
 
 <body>
-    <div id="loadingSpinner" class="loading-spinner d-none">
+    {{-- <div id="loadingSpinner" class="loading-spinner d-none">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
+    </div> --}}
 
     @include('partials.nav')
 
@@ -110,7 +110,6 @@
             });
         });
 
-        // Back to top button
         const backToTop = document.getElementById('backToTop');
         
         window.addEventListener('scroll', () => {
@@ -128,7 +127,6 @@
             });
         });
 
-        // Loading spinner helpers
         function showLoading() {
             document.getElementById('loadingSpinner')?.classList.remove('d-none');
         }
@@ -137,12 +135,11 @@
             document.getElementById('loadingSpinner')?.classList.add('d-none');
         }
 
-        // Hide loading on page load
         window.addEventListener('load', () => {
             setTimeout(hideLoading, 300);
         });
 
-        // Active nav link on scroll
+    
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 

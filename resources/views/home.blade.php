@@ -4,7 +4,7 @@
 
 @section('content')
 
-    {{-- <section id="hero" class="hero">
+    <section id="hero" class="hero">
 
         <div class="animated-bg">
             <div class="mesh-gradient"></div>
@@ -26,9 +26,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                     <h1 class="hero-title">
-                        <span class="hello-font">Hello</span>, I'm Shem --}}
+                        <span class="hello-font">Hello</span>, I'm Shem
                         {{-- <span class="wave" role="img" aria-label="waving hand">👋🏻</span> --}}
-                    {{-- </h1>
+                    </h1>
                     <p class="hero-subtitle">
                         I design and build cool web things — clean, responsive, and made with love. ✨
                     </p>
@@ -67,11 +67,11 @@
                         A Little About Me <span class="bling">✨</span>
                     </h2>
                     <p>
-                        I'm <strong>Shem</strong>, a developer who believes that websites are more than just pixels —
+                        I'm <strong>Shem</strong>, a developer who believes that websites are more than just pixels,
                         they're feelings turned into code. 💜
                     </p>
                     <p>
-                        I design and develop things that speak — from journal apps that help people tell their stories,
+                        I design and develop things that speak, from journal apps that help people tell their stories,
                         to quiet corners of the internet dedicated to someone I love. 🌟
                     </p>
                     <p>
@@ -154,9 +154,9 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 @endsection
-{{-- <style>
+<style>
     :root {
         --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -1066,4 +1066,4 @@
             font-size: 3.5rem;
         }
     }
-</style> --}}
+</style>
