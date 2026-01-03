@@ -104,36 +104,53 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card project-card">
                         <div class="project-placeholder">
-                            <img src="{{ asset('images/project1.png') }}" alt="project1">
+                            <img src="{{ asset('images/project1.png') }}" alt="project1" class="img-fluid">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">AMOA Youth Org</h5>
                             <p class="card-text">A seamless space for connection, event discovery, and collective
                                 storytelling for AMOA Youths.</p>
+                            <div class="mt-auto">
+                                <a href="https://yourlink.com" target="_blank" class="btn-gradient text-decoration-none">
+                                    🔗 Visit Project
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card project-card">
                         <div class="project-placeholder">
-                            <img src="{{ asset('images/project2.png') }}" alt="project2">
+                            <img src="{{ asset('images/project2.png') }}" alt="project2" class="img-fluid">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Insta App</h5>
                             <p class="card-text">A social space built for sharing moments instantly, focusing on a clean
-                                interface that lets your photos tell the story inspired by Instagram.</p>
+                                interface inspired by Instagram.</p>
+                            <div class="mt-auto">
+                                <a href="https://yourlink.com" target="_blank" class="btn-gradient text-decoration-none">
+                                    🔗 Visit Project
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card project-card">
                         <div class="project-placeholder">
-                            <img src="{{ asset('images/project3.png') }}" alt="project3">
+                            <img src="{{ asset('images/project3.png') }}" alt="project3" class="img-fluid">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Letter To You</h5>
-                            <p class="card-text">A beautiful and responsive web experience for my long distance boyfriend
+                            <p class="card-text">A beautiful and responsive web experience for my long distance boyfriend.
                             </p>
+                            <div class="mt-auto">
+                                <a href="https://yourlink.com" target="_blank" class="btn-gradient text-decoration-none">
+                                    🔗 Visit Project
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -837,7 +854,6 @@
         left: 0;
     }
 
-+
     .projects-section {
         padding: 8rem 0;
         position: relative;
@@ -897,6 +913,19 @@
         transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         position: relative;
         cursor: pointer;
+    }
+
+    .project-card .btn-gradient {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .project-card .card-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     [data-bs-theme="light"] .project-card {
