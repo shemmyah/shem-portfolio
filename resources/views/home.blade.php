@@ -4,8 +4,8 @@
 
 @section('content')
 
-    <section id="hero" class="hero">
-        {{-- Animated Background --}}
+    {{-- <section id="hero" class="hero">
+
         <div class="animated-bg">
             <div class="mesh-gradient"></div>
         </div>
@@ -26,9 +26,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                     <h1 class="hero-title">
-                        <span class="hello-font">Hello</span>, I'm Shem
+                        <span class="hello-font">Hello</span>, I'm Shem --}}
                         {{-- <span class="wave" role="img" aria-label="waving hand">👋🏻</span> --}}
-                    </h1>
+                    {{-- </h1>
                     <p class="hero-subtitle">
                         I design and build cool web things — clean, responsive, and made with love. ✨
                     </p>
@@ -48,14 +48,12 @@
         </div>
     </section>
 
-    {{-- Animated Section Divider --}}
     <div class="section-divider" data-aos="zoom-in"></div>
 
-    {{-- About Section --}}
     <section id="about" class="about-section">
         <div class="container">
             <div class="row align-items-center">
-                {{-- Profile Image --}}
+
                 <div class="col-lg-5 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
                     <div class="profile-img-wrapper">
                         <img src="{{ asset('images/banner-light.png') }}" alt="Shem Profile" class="img-fluid profile-img"
@@ -64,7 +62,6 @@
                     </div>
                 </div>
 
-                {{-- About Content --}}
                 <div class="col-lg-7 about-content" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="about-heading">
                         A Little About Me <span class="bling">✨</span>
@@ -99,7 +96,7 @@
         </div>
     </section>
 
-    {{-- Projects Section --}}
+
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
@@ -144,7 +141,6 @@
         </div>
     </section>
 
-    {{-- Contact Section --}}
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-wrapper">
@@ -158,9 +154,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
-<style>
+{{-- <style>
     :root {
         --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -171,7 +167,6 @@
         --glow-purple: rgba(118, 75, 162, 0.6);
     }
 
-    /* Smooth scroll */
     html {
         scroll-behavior: smooth;
     }
@@ -635,7 +630,6 @@
         box-shadow: 0 50px 120px var(--glow-purple);
     }
 
-    /* Animated section divider */
     .section-divider {
         width: 180px;
         height: 6px;
@@ -667,7 +661,6 @@
         }
     }
 
-    /* About Section */
     .about-section {
         padding: 8rem 0;
         position: relative;
@@ -714,7 +707,7 @@
         }
     }
 
-    /* Profile image with rotating border */
+
     .profile-img-wrapper {
         position: relative;
         max-width: 500px;
@@ -844,7 +837,7 @@
         left: 0;
     }
 
-    /* Projects Section */
++
     .projects-section {
         padding: 8rem 0;
         position: relative;
@@ -896,7 +889,6 @@
         }
     }
 
-    /* Project cards */
     .project-card {
         height: 100%;
         border: none;
@@ -952,7 +944,6 @@
         margin-bottom: 1.2rem;
     }
 
-    /* Project placeholder with animated gradient */
     .project-placeholder {
         width: 100%;
         height: 250px;
@@ -1001,7 +992,6 @@
         }
     }
 
-    /* Contact Section */
     .contact-section {
         padding: 8rem 0;
         position: relative;
@@ -1036,7 +1026,6 @@
         color: #d0d0d0;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
         .hero {
             min-height: auto;
@@ -1058,6 +1047,7 @@
         .hero-img {
             max-height: 400px;
             margin-top: 3rem;
+            margin-left: 0;
         }
 
         .about-section,
@@ -1076,4 +1066,4 @@
             font-size: 3.5rem;
         }
     }
-</style>
+</style> --}}
